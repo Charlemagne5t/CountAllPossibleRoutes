@@ -34,4 +34,14 @@ public class SolutionTest {
         int actual = new Solution().countRoutes(locations, start, finish, fuel);
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void countRoutesTest4() {
+        int[] locations = {1, 2, 3};
+        int start = 0;
+        int finish = 2;
+        int fuel = 40;
+        int expected = 615088286;
+        int actual = new Solution().countRoutes(locations, start, finish, fuel);
+        Assert.assertEquals(expected, actual);
+    }
 }
